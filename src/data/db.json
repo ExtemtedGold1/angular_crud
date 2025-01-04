@@ -1,0 +1,36 @@
+{
+  "employee": [
+    {
+      "id": "2",
+      "name": "Wikta",
+      "surname": "jas",
+      "email": "Chuj@chuj.pl",
+      "role": "helpdesk",
+      "pipi": "5"
+    },
+    {
+      "id": "1",
+      "name": "Dawid",
+      "surname": "Cichy",
+      "email": "DawidKochanie@love.pl",
+      "role": "admin",
+      "pipi": "26"
+    },
+    {
+      "id": "3",
+      "name": "Awa",
+      "surname": "Jans",
+      "email": "123@123,pl",
+      "role": "it_specialist",
+      "pipi": "3"
+    },
+    {
+      "id": "69",
+      "name": "snzdfnja",
+      "surname": "njasf",
+      "email": "njsdf",
+      "role": "it_specialist",
+      "pipi": "25"
+    }
+  ]
+}
