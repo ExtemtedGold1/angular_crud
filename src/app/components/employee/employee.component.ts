@@ -41,10 +41,30 @@ export class EmployeeComponent implements OnInit, OnDestroy{
   }
 
   addemployee(){
+    this.openpopup(0);
+  }
+
+  DeleteEmployee(empId: number){
+    if(confirm('Are you sure?')){
+      let sub = this.service.Delete(empId).subscribe(item => {
+        this.GetAllEmployee();
+      })
+      this.subscription.add(sub)
+    }
+  }
+
+  EditEmployee(empId:number){
+    this.openpopup(empId);
+  }
+
+  openpopup(empid:number){
     this.dialog.open(AddEmployeeComponent,{
       width: '50%',
       exitAnimationDuration: '300ms',
       enterAnimationDuration: '300ms',
+      data:{
+        'code': empid
+      }
     }).afterClosed().subscribe(o=>{
       this.GetAllEmployee();
     });

@@ -24,10 +24,10 @@ export class EmployeeService {
   };
 
   Update(data: Employee) {
-    return this.http.post(this.apiUrl+ '/'+ data.id, data);
+    return this.http.patch(this.apiUrl+ '/'+ data.id, data);
   };
 
-  Delete(empId: Employee) {
+  Delete(empId: number) {
     return this.http.delete(this.apiUrl + '/' + empId);
   };
 }
